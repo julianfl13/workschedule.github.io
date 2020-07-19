@@ -26,7 +26,7 @@ $(document).ready(function(){
         });
     }
             updateHour();
-    var int = setInterval(updateHours, 20000);
+    var int = setInterval(updateHour, 20000);
 
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
