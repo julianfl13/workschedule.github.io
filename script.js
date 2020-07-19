@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $(".saveBtn").on("click", function(){
         var value = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
@@ -26,6 +27,7 @@ $(document).ready(function(){
         });
     }
             updateHour();
+
     var int = setInterval(updateHour, 20000);
 
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
